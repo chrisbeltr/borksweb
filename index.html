@@ -62,7 +62,12 @@
             </div>
         </div>
     </div>
-    <div class="footer">Copyright © 2024</div>
+    <div class="footer">Copyright ©</div>
+    <script>
+        var footer = document.getElementsByClassName("footer")[0];
+        var year = new Date(Date.now()).getFullYear();
+        footer.innerHTML += ` ${year}`;
+    </script>
 </body>
 
 </html>
